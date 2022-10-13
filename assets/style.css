@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(230, 230, 236);
+    }
+
+header {
+    text-align: center;
+    padding: 0 0 20px 0;
+    width: 100%; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h1 {
+    font-size: large;
+    text-align: end;
+    
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+.search {
+    padding: 12px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.submit {
+    padding: 12px;
+    margin-left: 2px;
+}
+
+footer {
+    text-align: center;
+}
