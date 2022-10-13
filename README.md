@@ -25,6 +25,7 @@ This web application was created using JavaScript, third-party APIs, and Bulma C
 - [W3Schools on creating a search bar/button](https://www.w3schools.com/howto/howto_css_search_button.asp)
 - [Worldwide Restaurants API](https://rapidapi.com/ptwebsolution/api/worldwide-restaurants)
 - [Google Maps API](https://developers.google.com/maps/)
+- [Bulma CSS Framework](https://bulma.io/)
 
 ## Features
 - JavaScript
