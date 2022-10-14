@@ -1,19 +1,41 @@
-const encodedParams = new URLSearchParams();
-encodedParams.append("currency", "USD");
-encodedParams.append("language", "en_US");
-encodedParams.append("location_id", "15333482");
+// Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    console.log("hi")
+    const uluru = { lat: 44.9778, lng: -93.2650 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+  
+  window.initMap = initMap;
 
-const options = {
-	method: 'POST',
-	headers: {
-		'content-type': 'application/x-www-form-urlencoded',
-		'X-RapidAPI-Key': '24aa218f84mshbf2fafcf824733cp1a38fbjsn5414d56bed0e',
-		'X-RapidAPI-Host': 'worldwide-restaurants.p.rapidapi.com'
-	},
-	body: encodedParams
-};
 
-fetch('https://worldwide-restaurants.p.rapidapi.com/detail', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+
+  const encodedParams = new URLSearchParams();
+  encodedParams.append("language", "en_US");
+  encodedParams.append("limit", "30");
+  encodedParams.append("location_id", "43323");
+  encodedParams.append("currency", "USD");
+  
+  const options = {
+      method: 'POST',
+      headers: {
+          'content-type': 'application/x-www-form-urlencoded',
+          'X-RapidAPI-Key': 'd88954a20fmshc572a958b968a43p17e4bajsnef7ad1b1dfa0',
+          'X-RapidAPI-Host': 'worldwide-restaurants.p.rapidapi.com'
+      },
+      body: encodedParams
+  };
+  
+  fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
