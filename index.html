@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="./assets/style.css">
     <title>Food Fast</title>
 </head>
 <body>
+    <!--bulma header-->
     <header>
         <section class="hero is-medium is-info">
             <div class="hero-body">
@@ -21,31 +23,27 @@
             </div>
         </section>
     </header>
-<!-- spinner wheel -->
-    <button id="spin">Spin</button>
-    <span class="arrow"></span>
-    <div class="container">
-        <div class="chinese">Chinese<br>Food</div>
-        <div class="mexican">Mexican<br>Food</div>
-        <div class="italian">Italian<br>Food</div>
-        <div class="indian">Indian<br>Food</div>
-        <div class="thai">Thai<br>Food</div>
-        <div class="japanese">Japanese<br>Food</div>
-        <div class="korean">Korean<br>Food</div>
-        <div class="vietnamese">Vietnamese<br>Food</div>
-    </div>
-
+    <!--search bar and button-->
     <nav>
         <form action="/form/submit" method="GET">
             <input type="text" name="text" class="search" placeholder="Search Here">
             <input type="submit" name="submit" class="submit" value="Search">
         </form>
     </nav>
-
     <div>
         <h2>Showing Results For Food:</h2>
     </div>
-    <script src="./assets/script.js"></script>
+    <div id="map"></div>
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrvgCJGPsMiJTXsoFfwRcpGKqxP30P_jk&callback=initMap&v=weekly"
+        defer></script>
+    <script src="script.js"></script>
 </body>
 <footer>
     <span>Thanks for visiting our site and </span>
