@@ -22,15 +22,19 @@ h2 {
 /*search bar*/
 .search {
 
-    padding: 12px;
+    padding: 15px;
     margin-left: 100px;
     margin-bottom: 10px;
 }
 
 /*search button*/
 .submit {
-    padding: 12px;
+    padding: 15px;
     margin-left: 2px;
+}
+
+.search-results {
+    margin-left: 75px;
 }
 
 
