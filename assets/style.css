@@ -33,9 +33,6 @@ h2 {
     margin-left: 2px;
 }
 
-footer {
-    text-align: center;
-}
 
 /* Set the size of the div element that contains the map */
 #map {
@@ -43,11 +40,9 @@ footer {
     /* The height is 400 pixels */
     width: 25%;
     /* The width is the width of the web page */
-    position: absolute;
-    right: 100px;
+    left: 1000px;
     
-    
-    
+      
     
   }
 
@@ -64,3 +59,10 @@ footer {
     display: block;
 }
 
+footer {
+    text-align: center;
+}
+
+.tile {
+    
+}

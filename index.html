@@ -14,7 +14,7 @@
 <body>
     <!--bulma header-->
     <header>
-        <section class="hero is-medium is-info">
+        <section class="hero is-info">
             <div class="hero-body">
                 <p class="title">
                     Food Fast!
@@ -32,7 +32,7 @@
             <img class="banner-image" src="assets/food photo.jpg" </div>
 
             <!--search bar and button-->
-            <div class="card">
+            <div class="tile is-ancestor">
                 <form action="/form/submit" method="GET">
                     <input type="text" name="text" class="search" placeholder="Search Here">
                     <input type="submit" name="submit" class="submit" value="Search">
@@ -44,7 +44,17 @@
                 <h2>Showing Results For Food:</h2>
             </div>
 
-            <div id="map"></div>
+
+            <div class="tile">
+                <div id="map">
+                </div>
+
+
+
+            </div>
+
+
+    </main>
 
     </main>
 
