@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +10,44 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Food Fast</title>
 </head>
+
 <body>
     <!--bulma header-->
     <header>
         <section class="hero is-medium is-info">
             <div class="hero-body">
-                  <p class="title">
+                <p class="title">
                     Food Fast!
-                  </p>
-                  <p class="subtitle">
-                    Find food fast!
-                  </p>
+                </p>
+                <p class="subtitle">
+                    Are you looking to dine but in a dash? Find food fast!
+                </p>
             </div>
         </section>
     </header>
-    <!--search bar and button-->
-    <nav>
-        <form action="/form/submit" method="GET">
-            <input type="text" name="text" class="search" placeholder="Search Here">
-            <input type="submit" name="submit" class="submit" value="Search">
-        </form>
-    </nav>
-    <div>
-        <h2>Showing Results For Food:</h2>
-    </div>
-    <div id="map"></div>
+
+
+    <main>
+        <div class="banner">
+            <img class="banner-image" src="assets/food photo.jpg" </div>
+
+            <!--search bar and button-->
+            <div class="card">
+                <form action="/form/submit" method="GET">
+                    <input type="text" name="text" class="search" placeholder="Search Here">
+                    <input type="submit" name="submit" class="submit" value="Search">
+                </form>
+            </div>
+
+
+            <div>
+                <h2>Showing Results For Food:</h2>
+            </div>
+
+            <div id="map"></div>
+
+    </main>
+
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
@@ -45,9 +59,12 @@
         defer></script>
     <script src="script.js"></script>
 </body>
+
+
 <footer>
     <span>Thanks for visiting our site and </span>
     <br>
     <span> <a href="https://github.com/zahirovic/Food-Fast">Visit our GitHub Repository! </a> </span>
 </footer>
+
 </html>
