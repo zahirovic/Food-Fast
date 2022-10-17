@@ -4,7 +4,6 @@ body {
 
 header {
     text-align: center;
-    padding: 0 0 20px 0;
     width: 100%; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -17,30 +16,58 @@ h1 {
 }
 
 h2 {
-    margin-left: 20px;
+    margin-left: 90px;
 }
 
 /*search bar*/
 .search {
-    padding: 12px;
-    margin-left: 20px;
+
+    padding: 15px;
+    margin-left: 100px;
     margin-bottom: 10px;
 }
 
 /*search button*/
 .submit {
-    padding: 12px;
+    padding: 15px;
     margin-left: 2px;
+}
+
+.search-results {
+    margin-left: 75px;
+}
+
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 500px;
+    /* The height is 400 pixels */
+    width: 50%;
+    /* The width is the width of the web page */
+    left: 1000px;
+    margin-left: ;
+    
+      
+    
+  }
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
+.banner > .banner-image {
+    width:100% ;
+    height: 300px;
+    opacity: .75;
+    margin-bottom: 30px;
+    display: block;
 }
 
 footer {
     text-align: center;
 }
 
-/* Set the size of the div element that contains the map */
-#map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-  }
+.tile {
+    
+}
