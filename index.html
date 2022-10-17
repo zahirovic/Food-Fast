@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Food Fast</title>
 </head>
@@ -32,19 +33,17 @@
             <img class="banner-image" src="assets/foodpic.jpg">
         </div>
 
-        <!--search bar and button-->
-        <div class="tile is-ancestor">
-            <form action="/form/submit" method="GET">
-                <input type="text" name="text" class="search" placeholder="Search Here">
-                <input type="submit" name="submit" class="submit" value="Search">
-            </form>
-        </div>
 
+            
+            <!--search bar and button-->
+            <nav>
+                <input type="search" class="search">
+                <button>Search</button>
+            </nav>
+                <div class="search-results is-ancestor">
+                    <div class="tile is-4 is-vertical is-parent">
+                        <article class="tile is-child notification is-primary">
 
-        <div>
-            <div class="search-results is-ancestor">
-                <div class="tile is-4 is-vertical is-primary is-parent">
-                    <div class="tile is-child box">
                         <p class="title">Showing Results For Food:</p>
                     </div>
                 </div>
@@ -55,11 +54,6 @@
                     </div>
 
                 </div>
-
-
-    </main>
-
-
 
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
