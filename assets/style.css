@@ -28,13 +28,13 @@ h2 {
 }
 
 /*search button*/
-.submit {
+button {
     padding: 15px;
     margin-left: 2px;
 }
 
 .search-results {
-    margin-left: 75px;
+    margin-left: 90px;
 }
 
 
@@ -44,9 +44,7 @@ h2 {
     /* The height is 400 pixels */
     width: 50%;
     /* The width is the width of the web page */
-    left: 1000px;
-    margin-left: 20px;
-    
+    margin-left: 50%;
       
     
   }
@@ -66,8 +64,5 @@ h2 {
 
 footer {
     text-align: center;
-}
-
-.tile {
-    
+    font-size: larger;
 }
