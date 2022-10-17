@@ -26,15 +26,35 @@
             </div>
         </section>
     </header>
-    <!--search bar and button-->
-    <nav>
-        <input type="search" class="search">
-        <button>Search</button>
-    </nav>
-    <div>
-        <h2>Showing Results For Food:</h2>
-    </div>
-    <div id="map"></div>
+
+
+    <main>
+        <div class="banner">
+            <img class="banner-image" src="assets/food photo.jpg"></div>
+
+            <!--search bar and button-->
+            <nav>
+                <input type="search" class="search">
+                <button>Search</button>
+            </nav>
+                <div class="search-results is-ancestor">
+                    <div class="tile is-4 is-vertical is-primary is-parent">
+                      <div class="tile is-child box">
+                        <p class="title">Showing Results For Food:</p>
+                      </div>
+            </div>
+
+
+            <div class="tile">
+                <div id="map">
+                </div>
+
+
+
+            </div>
+
+
+    </main>
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
