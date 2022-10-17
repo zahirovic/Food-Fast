@@ -39,5 +39,21 @@ fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
   .then(response => console.log(response))
   .catch(err => console.error(err));
 
+// jQuery
+$('#submitid').click(function () {
+  var query = $('#myid').val();
+  var apiKey = 'AIzaSyDrvgCJGPsMiJTXsoFfwRcpGKqxP30P_jk';
+  var baseUrl = '';
 
+  var foodSearchUrl = baseUrl + ''
 
+$(document).ready(function() {
+  $("#someform").submit(function(){
+      $.ajax({
+          url: foodSearchUrl + '&q=' + encodeURI(query),
+          dataType: "jsonp",
+          success: searchCallback
+      });
+      return false;
+  });
+});
