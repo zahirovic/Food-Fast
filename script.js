@@ -1,6 +1,7 @@
 // 
 var select = document.getElementById('myCities');
 
+
 // Initialize and add the map
 function initMap(restaurants) {
  if (!restaurants) return
@@ -55,10 +56,9 @@ var duluth = "43018";
 var stPaul = "43501";
 var minnetonka = "43327";
 var eagan = "43022";
-var bloomington = "36942";
+var bloomington = "42881";
 
 function restaurantFetch(event) {
-  console.log("hi")
   var city = select.options[select.selectedIndex].value;
 
   // if stPaul clicked then city = loc id. var city = ()
@@ -86,6 +86,7 @@ function restaurantFetch(event) {
     .then(response => {
       var restaurants = response.results.data;
       var displayBox = document.getElementById("container");
+      displayBox.innerHTML = "";
       for (var i = 0; i < restaurants.length; i++) {
         var li = document.createElement("li");
         li.textContent = restaurants[i].name;
