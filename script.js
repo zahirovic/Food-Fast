@@ -141,4 +141,3 @@ function restaurantFetch(event) {
 //   );
 //     var city = data.city;
 //     $.each(city, function (index, city));
-
