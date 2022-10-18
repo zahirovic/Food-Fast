@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">  
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css"> 
     <title>Food Fast</title>
 </head>
 
@@ -30,37 +30,40 @@
 
     <main>
         <div class="banner">
-            <img class="banner-image" src="assets/food photo.jpg"></div>
+            <img class="banner-image" src="assets/foodpic.jpg">
+        </div>
 
-            <!--drop down-->
+
+            
+            <!--search bar and button-->
             <p>List of Cities:</p>
-<select id='myCities'>
-<option value="bloomington">Bloomington</option>
-<option value="duluth">Duluth</option>
-<option value="eagan">Eagan</option>
- <option value="minneapolis">Minneapolis</option>
- <option value="minnetonka">Minnetonka</option>
- <option value="stPaul">St Paul</option>
- </select>
- <!--search results-->
+                <select id='myCities' onchange = "restaurantFetch()">
+                    <option value="36942">Bloomington</option>
+                    <option value="43018">Duluth</option>
+                    <option value="43022">Eagan</option>
+                    <option value="43323">Minneapolis</option>
+                    <option value="43327">Minnetonka</option>
+                    <option value="43501">St Paul</option>
+    </select>
                 <div class="search-results is-ancestor">
                     <div class="tile is-4 is-vertical is-parent">
                         <article class="tile is-child notification is-primary">
+
                         <p class="title">Showing Results For Food:</p>
-                      </div>
-            </div>
+                    </div>
+                </div>
 
-
-            <div class="tile">
-                <div id="map">
+                <div id="container"> 
+                    
                 </div>
 
 
+                <div class="tile">
+                    <div id="map">
+                    </div>
 
-            </div>
+                </div>
 
-
-    </main>
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
@@ -70,6 +73,7 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrvgCJGPsMiJTXsoFfwRcpGKqxP30P_jk&callback=initMap&v=weekly"
         defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
     
 </body>
