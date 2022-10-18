@@ -36,42 +36,49 @@
 
             
             <!--drop down-->
-            <div class="cities-list">
-            <p>List of Cities:</p>
-                <select id='myCities' onchange = "restaurantFetch()">
-                    <option value="">select here</option>
-                    <option value="42881">Bloomington</option>
-                    <option value="43018">Duluth</option>
-                    <option value="43022">Eagan</option>
-                    <option value="43323">Minneapolis</option>
-                    <option value="43327">Minnetonka</option>
-                    <option value="43501">St Paul</option>
-    </select>
-</div>
+        <div class="cities-list">
+            <p>List of Cities:
+            </p>
+            <select id='myCities' onchange = "restaurantFetch()">
+                <option value="">select here</option>
+                <option value="42881">Bloomington</option>
+                <option value="43018">Duluth</option>
+                <option value="43022">Eagan</option>
+                <option value="43323">Minneapolis</option>
+                <option value="43327">Minnetonka</option>
+                <option value="43501">St Paul</option>
+            </select>
+        </div>
 
 <!--search results-->
-                <div class="search-results is-ancestor">
-                    <div class="tile is-4 is-vertical is-parent">
-                        <article class="tile is-child notification is-primary">
-
-                        <p class="title">Showing Results For Restaurants:</p>
-                    </div>
+        <div class="search-results is-ancestor">
+            <div class="tile is-4 is-vertical is-parent">
+                <article class="tile is-child notification is-primary">
+                    <p class="title">Showing Results For Restaurants:</p>
+                </article>
+            </div>
+        </div>
 <!-- container = results -->
 
-                <div id="container"></div>           
+        <div id="container"></div>           
 
 <!--map-->
-                <div class="map-tile is-ancestor">
-                    <div class="tile is-vertical is-9">
-                        <div class="tile">
-                            <div class="tile is-parent is-vertical">
-                                <article class="tile is-child notification is-primary"></article>
-                                <p class="title"></p>
-                                <p class="subtitle"></p>
-                            <div id="map">
-                        </div>
+        <div class="map-tile is-ancestor">
+            <div class="tile is-vertical is-9">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                        <p class="title"></p>
+                        <p class="subtitle"></p>
+                        <div id="map"></div>
+                        </article>
                     </div>
                 </div>
+            </div>
+        </div>
+    </main>
+                        
+    
 
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML

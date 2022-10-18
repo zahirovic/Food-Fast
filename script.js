@@ -1,4 +1,4 @@
-// 
+
 var select = document.getElementById('myCities');
 
 
@@ -33,24 +33,10 @@ function initMap(restaurants) {
         map: map,
 
     }); 
-    console.log(coords, "coordinates")
-
-
-
-
-    // The location of Uluru
-    // const uluru = { lat: 44.9778, lng: -93.2650 };
-    // The map, centered at Uluru
-  
-    // The marker, positioned at Uluru
-  
+    console.log(coords, "coordinates")  
   }
 }
-
-// initMap()
-// window.initMap = initMap;
-
-// var city = "";
+// Fetching cities and restaurants from worldwide restaurants api
 var minneapolis = "43323";
 var duluth = "43018";
 var stPaul = "43501";
@@ -61,10 +47,6 @@ var bloomington = "42881";
 function restaurantFetch(event) {
   var city = select.options[select.selectedIndex].value;
 
-  // if stPaul clicked then city = loc id. var city = ()
-  // click event 
-
-  // Minneapolis
   const encodedParams = new URLSearchParams();
   encodedParams.append("language", "en_US");
   encodedParams.append("limit", "30");
@@ -96,49 +78,4 @@ function restaurantFetch(event) {
       initMap(restaurants)
     })
     .catch(err => console.error(err));
-
-
 }
-
-
-  //drop down
-//   var myOptions = {
-//     val1 : 'bloomington',
-//     val2 : 'duluth',
-//     val3 : 'eagan',
-//     val4 : 'minneapolis',
-//     val5 : 'minnetonka',
-//     val6 : 'stPaul'
-// };
-// var mySelect = $('#myCities');
-// $.each(myOptions, function(val, text) {
-//     mySelect.append(
-//         $('<option></option>').val(val).html(text)
-//     );
-// });
-
-// jQuery
-// // $('#submitid').click(function () {
-//   var query = $('#myid').val();
-//   var apiKey = 'AIzaSyDrvgCJGPsMiJTXsoFfwRcpGKqxP30P_jk';
-//   var baseUrl = 'https://maps.googleapis.com/';
-
-//   var foodSearchUrl = baseUrl + 'maps/api/js?key=' + apiKey;
-
-// $(document).ready(function() {
-//   $("#someform").submit(function(){
-//       $.ajax({
-//           url: foodSearchUrl + '&q=' + encodeURI(query),
-//           dataType: "jsonp",
-//           success: searchCallback
-//       });
-//       return false;
-//   });
-// });
-
-//   function searchCallback(data) {
-//     $(document.body).append(
-//       'Found ' + data.total + ' results for ' + query
-//   );
-//     var city = data.city;
-//     $.each(city, function (index, city));
