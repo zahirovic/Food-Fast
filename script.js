@@ -96,6 +96,7 @@ function restaurantFetch(event) {
     })
     .catch(err => console.error(err));
 
+
 }
 
 

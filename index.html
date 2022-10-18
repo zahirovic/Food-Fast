@@ -15,7 +15,7 @@
 <body>
     <!--bulma header-->
     <header>
-        <section class="hero is-info">
+        <section class="hero is-primary">
             <div class="hero-body">
                 <p class="title">
                     Food Fast!
@@ -27,7 +27,7 @@
         </section>
     </header>
 
-
+<!--banner image-->
     <main>
         <div class="banner">
             <img class="banner-image" src="assets/foodpic.jpg">
@@ -35,9 +35,11 @@
 
 
             
-            <!--search bar and button-->
+            <!--drop down-->
+            <div class="cities-list">
             <p>List of Cities:</p>
                 <select id='myCities' onchange = "restaurantFetch()">
+                    <option value="">select here</option>
                     <option value="36942">Bloomington</option>
                     <option value="43018">Duluth</option>
                     <option value="43022">Eagan</option>
@@ -45,25 +47,31 @@
                     <option value="43327">Minnetonka</option>
                     <option value="43501">St Paul</option>
     </select>
+</div>
+
+<!--search results-->
                 <div class="search-results is-ancestor">
                     <div class="tile is-4 is-vertical is-parent">
                         <article class="tile is-child notification is-primary">
 
-                        <p class="title">Showing Results For Food:</p>
+                        <p class="title">Showing Results For Restaurants:</p>
                     </div>
-                </div>
 
-                <div id="container"> 
-                    
-                </div>
+                <div id="container">                
 
-
-                <div class="tile">
+<!--map-->
+                <div class="map-tile is-ancestor">
+                    <div class="tile is-vertical is-9">
+                      <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                          <article class="tile is-child notification is-primary">
+                            <p class="title"></p>
+                            <p class="subtitle"></p>
                     <div id="map">
                     </div>
 
                 </div>
-
+            </div>
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
@@ -75,11 +83,15 @@
         defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
-    
 </body>
 
 
 <footer>
+    <div class="footer-tile is-ancestor">
+        <div class="tile is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
     <span>Thanks for visiting our site and </span>
     <br>
     <span> <a href="https://github.com/zahirovic/Food-Fast">Visit our GitHub Repository! </a> </span>
