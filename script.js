@@ -17,11 +17,19 @@ function initMap() {
 
 window.initMap = initMap;
 
+var city = "";
+var minneapolis = "43323";
+var duluth = "43018";
+var stPaul = "43501";
+var minnetonka = "43327";
+var eagan = "43022";
+var bloomington = "36942";
+
 
 const encodedParams = new URLSearchParams();
 encodedParams.append("language", "en_US");
 encodedParams.append("limit", "30");
-encodedParams.append("location_id", "55414");
+encodedParams.append("location_id", city);
 encodedParams.append("currency", "USD");
 
 const options = {
@@ -39,5 +47,18 @@ fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
   .then(response => console.log(response))
   .catch(err => console.error(err));
 
-
-
+//drop down
+  var myOptions = {
+    val1 : 'bloomington',
+    val2 : 'duluth',
+    val3 : 'eagan',
+    val4 : 'minneapolis',
+    val5 : '                                                        minnetonka',
+    val6 : 'stPaul'
+};
+var mySelect = $('#myCities');
+$.each(myOptions, function(val, text) {
+    mySelect.append(
+        $('<option></option>').val(val).html(text)
+    );
+});
