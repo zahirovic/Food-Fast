@@ -66,6 +66,7 @@ fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
   })
   .catch(err => console.error(err));
 
+
 }
 
 
@@ -110,3 +111,4 @@ fetch('https://worldwide-restaurants.p.rapidapi.com/search', options)
 //   );
 //     var city = data.city;
 //     $.each(city, function (index, city));
+
