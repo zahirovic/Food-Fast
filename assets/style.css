@@ -57,12 +57,11 @@ h2 {
     margin-left: 50%;
   }
 
-
+  .footer-tile {
+    margin: auto; 
+ }
+ 
 footer {
     text-align: center;
     font-size: larger;
-}
-
-.footer-tile {
-    
 }

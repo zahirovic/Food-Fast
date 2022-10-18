@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Food Fast</title>
 </head>
 
@@ -27,74 +27,76 @@
         </section>
     </header>
 
-<!--banner image-->
+    <!--banner image-->
     <main>
         <div class="banner">
             <img class="banner-image" src="assets/foodpic.jpg">
         </div>
 
 
-            
-            <!--drop down-->
-            <div class="cities-list">
+
+        <!--drop down-->
+        <div class="cities-list">
             <p>List of Cities:</p>
-                <select id='myCities' onchange = "restaurantFetch()">
-                    <option value="">select here</option>
-                    <option value="36942">Bloomington</option>
-                    <option value="43018">Duluth</option>
-                    <option value="43022">Eagan</option>
-                    <option value="43323">Minneapolis</option>
-                    <option value="43327">Minnetonka</option>
-                    <option value="43501">St Paul</option>
-    </select>
-</div>
+            <select id='myCities' onchange="restaurantFetch()">
+                <option value="">select here</option>
+                <option value="36942">Bloomington</option>
+                <option value="43018">Duluth</option>
+                <option value="43022">Eagan</option>
+                <option value="43323">Minneapolis</option>
+                <option value="43327">Minnetonka</option>
+                <option value="43501">St Paul</option>
+            </select>
+        </div>
 
-<!--search results-->
-                <div class="search-results is-ancestor">
-                    <div class="tile is-4 is-vertical is-parent">
-                        <article class="tile is-child notification is-primary">
+        <!--search results-->
+        <div class="search-results is-ancestor">
+            <div class="tile is-4 is-vertical is-parent">
+                <article class="tile is-child notification is-primary">
 
-                        <p class="title">Showing Results For Restaurants:</p>
-                    </div>
-
-                <div id="container">                
-
-<!--map-->
-                <div class="map-tile is-ancestor">
-                    <div class="tile is-vertical is-9">
-                      <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                          <article class="tile is-child notification is-primary">
-                            <p class="title"></p>
-                            <p class="subtitle"></p>
-                    <div id="map">
-                    </div>
-
-                </div>
+                    <p class="title">Showing Results For Restaurants:</p>
             </div>
-    <!-- 
+
+            <div id="container"> </div>
+
+            <!--map-->
+            <div class="map-tile is-ancestor">
+                <div class="tile is-vertical is-9">
+                    <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child notification is-primary">
+                                <p class="title"></p>
+                                <p class="subtitle"></p>
+                                <div id="map">
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
      and consistent behavior across browsers, consider loading using Promises
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrvgCJGPsMiJTXsoFfwRcpGKqxP30P_jk&callback=initMap&v=weekly"
-        defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrvgCJGPsMiJTXsoFfwRcpGKqxP30P_jk&callback=initMap&v=weekly"
+                    defer></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="script.js"></script>
 </body>
 
 
 <footer>
     <div class="footer-tile is-ancestor">
         <div class="tile is-8">
-          <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child notification is-primary">
-    <span>Thanks for visiting our site and </span>
-    <br>
-    <span> <a href="https://github.com/zahirovic/Food-Fast">Visit our GitHub Repository! </a> </span>
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-primary">
+                        <span>Thanks for visiting our site and </span>
+                        <br>
+                        <span> <a href="https://github.com/zahirovic/Food-Fast">Visit our GitHub Repository! </a>
+                        </span>
 </footer>
 
 </html>
