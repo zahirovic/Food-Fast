@@ -40,7 +40,7 @@
             <p>List of Cities:</p>
             <select id='myCities' onchange="restaurantFetch()">
                 <option value="">select here</option>
-                <option value="36942">Bloomington</option>
+                <option value="42881">Bloomington</option>
                 <option value="43018">Duluth</option>
                 <option value="43022">Eagan</option>
                 <option value="43323">Minneapolis</option>
@@ -50,47 +50,42 @@
         </div>
 
         <!--search results-->
-        <div class="search-results is-ancestor">
-            <div class="tile is-4 is-vertical is-parent">
-                <article class="tile is-child notification is-primary">
+        <div class="tile is-ancestor">
+            <div class="tile is-4 is-parent">
+                <div class="search-results">
+                    <article class="tile is-child notification is-primary">
 
                         <p class="title">Showing Results For Restaurants:</p>
-                    </div>
-<!-- container = results -->
-
-            <div id="container"> </div>
+                        <div id="container"></div>
+                    </article>
+                </div>
+            </div>
 
             <!--map-->
-            <div class="map-tile is-ancestor">
-                <div class="tile is-vertical is-9">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification is-primary">
-                                <p class="title"></p>
-                                <p class="subtitle"></p>
-                                <div id="map">
-                                </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- 
+            <div class="map-tile is-parent">
+                <article class="tile is-child notification is-primary">
+                    <div id="map"></div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
      and consistent behavior across browsers, consider loading using Promises
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
-                <script
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrvgCJGPsMiJTXsoFfwRcpGKqxP30P_jk&callback=initMap&v=weekly"
-                    defer></script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                <script src="script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrvgCJGPsMiJTXsoFfwRcpGKqxP30P_jk&callback=initMap&v=weekly"
+        defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 
 <footer>
     <div class="footer-tile is-ancestor">
-        <div class="tile is-8">
+        <div class="tile is-12">
             <div class="tile">
                 <div class="tile is-parent is-vertical">
                     <article class="tile is-child notification is-primary">
@@ -98,6 +93,11 @@
                         <br>
                         <span> <a href="https://github.com/zahirovic/Food-Fast">Visit our GitHub Repository! </a>
                         </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 </html>

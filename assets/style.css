@@ -8,7 +8,8 @@ header {
     width: 100%; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+ 
+ /*banner image*/
 .banner {
     width: 100%;
     display: block;
@@ -16,32 +17,21 @@ header {
 
 .banner > .banner-image {
     width:100% ;
-    height: 300px;
-    opacity: .75;
+    height: 425px;
     margin-bottom: 30px;
     display: block;
-}
-
-h1 {
-    font-size: large;
-    text-align: end;
-    
-}
-
-h2 {
-    margin-left: 90px;
 }
 
 /*cities list*/
 .cities-list {
     margin-left: 100px;
+    margin-bottom: 20px;
 
 }
 
 .search-results {
-    margin-left: 90px;
+    margin-left: 100px;
 }
-
 
 /* Set the size of the div element that contains the map */
 #map {
@@ -54,19 +44,17 @@ h2 {
   }
 
   .map-tile {
+    display: block;
     margin-left: 50%;
+    
   }
-
-  .footer-tile {
-    margin: auto; 
- }
  
 footer {
     text-align: center;
     font-size: larger;
 }
 
-
 .footer-tile {
+    margin: auto; 
     
-}
+ }
